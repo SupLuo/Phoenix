@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin"
+    android:paddingTop="@dimen/pnx_view_margin_medium"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/brand_iv"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pnx_ic_brand_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/notice_view"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pnx_view_margin"
+        android:drawableLeft="@drawable/pnx_ic_voice"
+        android:drawablePadding="@dimen/pnx_view_margin"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/pnx_text_color_hint_to_accent_focus_slt"
+        android:textSize="@dimen/pnx_text_size_tip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/brand_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="618补贴加码 凤凰专区会员5折起"
+        app:drawableTint="@color/pnx_text_color_hint_to_accent_focus_slt"/>
+
+    <ImageButton
+        android:id="@+id/wx_btn"
+        style="@style/UI.HomeStatusBtn"
+        android:src="@drawable/pnx_home_status_bar_fmsj_slt" />
+
+    <ImageButton
+        android:id="@+id/subscribe_btn"
+        style="@style/UI.HomeStatusBtn"
+        android:src="@drawable/pnx_home_status_bar_dgxf_slt" />
+
+    <ImageButton
+        android:id="@+id/history_btn"
+        style="@style/UI.HomeStatusBtn"
+        android:src="@drawable/pnx_home_status_bar_history_slt" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        style="@style/UI.HomeStatusBtn"
+        android:src="@drawable/pnx_home_status_bar_search_slt" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="wx_btn,subscribe_btn,history_btn,search_btn"
+        app:flow_horizontalGap="@dimen/pnx_view_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

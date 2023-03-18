@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerLayout">
+        <!--banner内容的宽度-->
+
+        <attr name="banner_width" format="dimension|reference">
+            <!-- The view should be as big as its parent (minus padding).
+                 Introduced in API Level 8. -->
+            <enum name="match_parent" value="-1" />
+            <!-- The view should be only big enough to enclose its content (plus padding). -->
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <!--banner内容的高度-->
+        <attr name="banner_height" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>

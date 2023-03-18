@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin"
+    android:paddingTop="20dp"
+    android:paddingBottom="40dp">
+
+    <ImageButton
+        android:id="@+id/home_footer_back_btn"
+        style="@style/UI.Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pnx_home_footer_backtop_slt"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/home_footer_search_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/home_footer_search_btn"
+        style="@style/UI.Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pnx_card_margin"
+        android:background="@drawable/pnx_home_footer_search_slt"
+        app:layout_constraintLeft_toRightOf="@id/home_footer_back_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="0dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pnx_view_margin"
+        android:text="我们也是有&quot;底线&quot;的，按遥控[返回]键回到顶部"
+        android:textAppearance="@style/UI.Text.Tip"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_footer_back_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

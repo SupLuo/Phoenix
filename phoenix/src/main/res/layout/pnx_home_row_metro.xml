@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pnx_home_metro_content_height_include_2fb"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin_exclude_fb">
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/metro_image_1"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/metro_image_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/metro_player_container"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/metro_image_11"
+            style="@style/UI.Image"
+            android:layout_width="206dp"
+            android:layout_height="@dimen/pnx_home_metro_half_row_content_height"
+            android:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="6dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            style="@style/UI.Text.Shadow"
+            android:textAppearance="@style/UI.Text.Headline"
+            tools:text="头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条" />
+
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/metro_image_2"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pnx_card_margin_exclude_2fb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metro_image_1">
+
+        <ImageView
+            android:id="@+id/metro_image_22"
+            style="@style/UI.Image"
+            android:layout_width="206dp"
+            android:layout_height="@dimen/pnx_home_metro_half_row_content_height"
+            android:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/hot_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="6dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            style="@style/UI.Text.Shadow"
+            android:textAppearance="@style/UI.Text.Headline"
+            tools:text="头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条头条" />
+
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/metro_player_container"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/pnx_card_margin_exclude_2fb"
+        android:clipChildren="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/metro_image_1"
+        app:layout_constraintRight_toLeftOf="@id/metro_banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="0dp">
+
+        <bas.leanback.effect.EffectFrameLayout
+            android:id="@+id/metro_player"
+            android:layout_width="439dp"
+            android:layout_height="252dp"
+            app:bringToFrontOnFocus_bas="selfAndParent"
+            app:effect_contains_surface_child_bas="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:scale_bas="false">
+
+            <xyz.doikki.videoplayer.DKVideoView
+                android:id="@+id/player_view"
+                android:layout_width="427dp"
+                android:layout_height="240dp"
+                android:background="@drawable/image_place_holder"/>
+
+        </bas.leanback.effect.EffectFrameLayout>
+
+        <bas.leanback.effect.EffectFrameLayout
+            android:id="@+id/left_tai_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1.5dp"
+            app:bringToFrontOnFocus_bas="selfAndParent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <ImageView
+                android:layout_width="213dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pnx_ic_home_zwt" />
+        </bas.leanback.effect.EffectFrameLayout>
+
+        <bas.leanback.effect.EffectFrameLayout
+            android:id="@+id/right_tai_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1.5dp"
+            app:bringToFrontOnFocus_bas="selfAndParent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:layout_width="213dp"
+                android:layout_height="38dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pnx_ic_home_zxt" />
+        </bas.leanback.effect.EffectFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <bas.leanback.effect.EffectFrameLayout-->
+    <!--        android:id="@+id/metro_banner"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginLeft="@dimen/pnx_card_margin_exclude_2fb"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/metro_player_container"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:descendantFocusability="blocksDescendants">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/metro_image_44"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="@dimen/pnx_home_metro_content_height"-->
+    <!--            android:src="@drawable/image_place_holder" />-->
+
+    <!--    </bas.leanback.effect.EffectFrameLayout>-->
+
+    <com.zhang.phoenix.widget.banner.BannerLayout
+        android:id="@+id/metro_banner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/pnx_card_margin_exclude_2fb"
+        android:descendantFocusability="blocksDescendants"
+        app:banner_height="@dimen/pnx_home_metro_content_height"
+        app:banner_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/metro_player_container"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

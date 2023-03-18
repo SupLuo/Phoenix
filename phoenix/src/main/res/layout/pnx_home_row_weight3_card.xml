@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    tools:background="#000">
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/weight3_ceil1"
+        style="@style/UI.HomeCeil.Weight3CardInConstraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/weight3_ceil2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/weight3_image1"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/weight3_ceil2"
+        style="@style/UI.HomeCeil.Weight3CardInConstraint"
+        android:layout_marginLeft="@dimen/pnx_card_margin_exclude_2fb"
+        app:layout_constraintLeft_toRightOf="@id/weight3_ceil1"
+        app:layout_constraintRight_toLeftOf="@id/weight3_ceil3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="0dp">
+
+        <ImageView
+            android:id="@+id/weight3_image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/UI.Image"
+            android:src="@drawable/image_place_holder" />
+
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/weight3_ceil3"
+        style="@style/UI.HomeCeil.Weight3CardInConstraint"
+        android:layout_marginLeft="@dimen/pnx_card_margin_exclude_2fb"
+        app:layout_constraintLeft_toRightOf="@id/weight3_ceil2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginLeft="0dp">
+
+        <ImageView
+            android:id="@+id/weight3_image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/UI.Image"
+            android:src="@drawable/image_place_holder" />
+
+    </bas.leanback.effect.EffectFrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

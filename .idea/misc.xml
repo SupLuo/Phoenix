@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/drawable/ic_retry_reverse_circle_arrow_msf.xml" value="0.1985" />
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/drawable/image_placeholder_bas.xml" value="0.283" />
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/layout/load_state_footer_layout_bas.xml" value="0.190625" />
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/layout/pnx_developing_fragment.xml" value="0.11822916666666666" />
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/layout/pnx_home_activity.xml" value="0.1" />
+        <entry key="..\:/Insight/Android/Phoenix/phoenix/src/main/res/layout/pnx_home_row_metro.xml" value="0.15" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    tools:background="#000">
+
+    <bas.leanback.effect.EffectConstraintLayout
+        android:id="@+id/weight4_ceil1"
+        style="@style/UI.HomeCeil.Card2Weight4Container"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/weight4_ceil2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/weight4_image1"
+            style="@style/UI.HomeCeil.Card2Weight4Image"
+            tools:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/weight4_tag1"
+            style="@style/UI.HomeCeil.Card2Weight4Time"
+            app:layout_constraintBottom_toBottomOf="@id/weight4_image1"
+            app:layout_constraintRight_toRightOf="@id/weight4_image1"
+            tools:text="111" />
+
+        <TextView
+            android:id="@+id/weight4_text1"
+            style="@style/UI.HomeCeil.Card2Weight4Text"
+            app:layout_constraintTop_toBottomOf="@id/weight4_image1"
+            tools:text="但是跑到手机上时不显示引号，我们知道原因是没有加 \ 进行转译，加上转译符号就好了" />
+
+    </bas.leanback.effect.EffectConstraintLayout>
+
+    <bas.leanback.effect.EffectConstraintLayout
+        android:id="@+id/weight4_ceil2"
+        style="@style/UI.HomeCeil.Card2Weight4Container"
+        app:layout_constraintLeft_toRightOf="@id/weight4_ceil1"
+        app:layout_constraintRight_toLeftOf="@id/weight4_ceil3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/weight4_image2"
+            style="@style/UI.HomeCeil.Card2Weight4Image"
+            tools:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/weight4_tag2"
+            style="@style/UI.HomeCeil.Card2Weight4Time"
+            app:layout_constraintBottom_toBottomOf="@id/weight4_image2"
+            app:layout_constraintRight_toRightOf="@id/weight4_image2"
+            tools:text="111" />
+
+        <TextView
+            android:id="@+id/weight4_text2"
+            style="@style/UI.HomeCeil.Card2Weight4Text"
+            app:layout_constraintTop_toBottomOf="@id/weight4_image2"
+
+            tools:text="但是跑到手机上时不显示引号，我们知道原因是没有加 \ 进行转译，加上转译符号就好了" />
+
+    </bas.leanback.effect.EffectConstraintLayout>
+
+    <bas.leanback.effect.EffectConstraintLayout
+        android:id="@+id/weight4_ceil3"
+        style="@style/UI.HomeCeil.Card2Weight4Container"
+        app:layout_constraintLeft_toRightOf="@id/weight4_ceil2"
+        app:layout_constraintRight_toLeftOf="@id/weight4_ceil4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/weight4_image3"
+            style="@style/UI.HomeCeil.Card2Weight4Image"
+            tools:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/weight4_tag3"
+            style="@style/UI.HomeCeil.Card2Weight4Time"
+            app:layout_constraintBottom_toBottomOf="@id/weight4_image3"
+            app:layout_constraintRight_toRightOf="@id/weight4_image3"
+            tools:text="111" />
+
+        <TextView
+            android:id="@+id/weight4_text3"
+            style="@style/UI.HomeCeil.Card2Weight4Text"
+            app:layout_constraintTop_toBottomOf="@id/weight4_image3"
+            tools:text="但是跑到手机上时" />
+
+    </bas.leanback.effect.EffectConstraintLayout>
+
+
+    <bas.leanback.effect.EffectConstraintLayout
+        android:id="@+id/weight4_ceil4"
+        style="@style/UI.HomeCeil.Card2Weight4Container"
+        app:layout_constraintLeft_toRightOf="@id/weight4_ceil3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/weight4_image4"
+            style="@style/UI.HomeCeil.Card2Weight4Image"
+            tools:src="@drawable/image_place_holder" />
+
+        <TextView
+            android:id="@+id/weight4_tag4"
+            style="@style/UI.HomeCeil.Card2Weight4Time"
+            app:layout_constraintBottom_toBottomOf="@id/weight4_image4"
+            app:layout_constraintRight_toRightOf="@id/weight4_image4"
+            tools:text="111" />
+
+        <TextView
+            android:id="@+id/weight4_text4"
+            style="@style/UI.HomeCeil.Card2Weight4Text"
+            app:layout_constraintTop_toBottomOf="@id/weight4_image4"
+            tools:text="但是跑到手机上时不显示引号，我们知道原因是没有加 \ 进行转译，加上转译符号就好了" />
+
+    </bas.leanback.effect.EffectConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

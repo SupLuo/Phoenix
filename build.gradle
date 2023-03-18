@@ -1,0 +1,126 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    ext {
+        /*用于解决Kotlin生成Java Doc（发布Lib到Maven需要）： https://github.com/Kotlin/dokka/releases*/
+        dokka_version = '1.6.21'
+
+        /*https://github.com/JetBrains/kotlin/releases*/
+        kotlin_version = '1.6.21'
+
+        globalCompileSdkVersion = 32
+        globalTargetSdkVersion = 32
+        globalTargetSdkVersionTV = 22
+        globalMinSdkVersion = 19
+
+        appcompat_version = '1.4.1'
+        material_version = '1.6.1'
+        constraintlayout_version = '2.1.3'
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/annotation?hl=zh-cn*/
+        annotation_version = '1.3.0'
+        /*https://developer.android.google.cn/jetpack/androidx/releases/activity?hl=zh-cn*/
+        activity_version = "1.4.0"
+        /*https://developer.android.google.cn/jetpack/androidx/releases/fragment?hl=zh-cn*/
+        fragment_version = "1.4.1"
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/paging*/
+        paging_version = "3.1.1"
+
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/lifecycle?hl=zh-cn#2.4.1*/
+        lifecycle_version = "2.4.1"
+
+        /*https://github.com/bumptech/glide*/
+        glide_version = "4.13.2"
+
+
+        /*支持到4.4 retrofit + okhttp的版本不能太高，高版本只支持ApiLevel 21*/
+        //        okhttp3_version = "3.14.4"
+//        retrofit_version = "2.7.1"
+        retrofit_version = "2.6.4"
+        okhttp3_version = "3.12.12"
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/startup?hl=zh-cn*/
+        startup_version = "1.1.1"
+
+        room_version = "2.4.2"
+
+        /*https://mvnrepository.com/artifact/com.google.android.flexbox/flexbox*/
+        flexbox_version = "3.0.0"
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/leanback?hl=zh-cn*/
+        /*1.1.0-beta01*/
+        leanback_version = "1.2.0-alpha01"
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/leanback*/
+        leanback_paging_version = '1.1.0-alpha09'
+
+
+        /*https://developer.android.google.cn/jetpack/androidx/releases/recyclerview?hl=zh-cn*/
+        recyclerview_version = '1.2.1'
+
+
+        gson_version = "2.8.7"
+        jackson_version = '2.13.2'
+        fastjson_version = "1.2.10"
+        /*https://github.com/square/moshi*/
+        moshi_version = '1.14.0'
+
+        testDeps = [
+                junit       : 'junit:junit:4.13.2',
+                runner      : 'androidx.test:runner:1.4.0',
+                espressoCore: 'androidx.test.espresso:espresso-core:3.4.0'
+        ]
+
+        /*android  jetpack*/
+        /*JitPack地址：https://developer.android.google.cn/jetpack/androidx/versions?hl=zh-cn*/
+        androidDeps = [
+                /*android jar 包，用于java库添加依赖，Android相关的module不要使用*/
+                sdk             : 'com.google.android:android:4.1.1.4',
+                annotation      : "androidx.annotation:annotation:$annotation_version",
+                activity        : "androidx.activity:activity-ktx:$activity_version",
+                fragment        : "androidx.fragment:fragment-ktx:$fragment_version",
+
+                /*https://developer.android.google.cn/jetpack/androidx/releases/core?hl=zh-cn*/
+                coreKtx         : 'androidx.core:core-ktx:1.7.0',
+
+                /*https://developer.android.google.cn/jetpack/androidx/releases/appcompat?hl=zh-cn*/
+                appcompat       : "androidx.appcompat:appcompat:${appcompat_version}",
+
+                /*todo：未在官网找到链接*/
+                /*https://mvnrepository.com/artifact/com.google.android.material/material*/
+                material        : "com.google.android.material:material:${material_version}",
+
+                /*https://developer.android.google.cn/jetpack/androidx/releases/constraintlayout?hl=zh-cn*/
+                constraintlayout: "androidx.constraintlayout:constraintlayout:${constraintlayout_version}",
+
+                /*https://developer.android.google.cn/jetpack/androidx/releases/multidex?hl=zh-cn*/
+                multidex        : 'androidx.multidex:multidex:2.0.1',
+
+                /*https://developer.android.google.cn/jetpack/androidx/releases/recyclerview?hl=zh-cn*/
+                recyclerview    : "androidx.recyclerview:recyclerview:$recyclerview_version",
+
+                flexbox         : "com.google.android.flexbox:flexbox:$flexbox_version"
+        ]
+
+        kotlinDeps = [
+                /*https://github.com/Kotlin/kotlinx.coroutines*/
+                /*1.6以上的版本要求kotlin必须是1.6+*/
+                kotlinxCoroutinesCore   : 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1',
+                kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+        ]
+    }
+}
+
+
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

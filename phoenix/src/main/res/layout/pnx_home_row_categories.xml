@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin_exclude_fb"
+    tools:background="#000">
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card1"
+        style="@style/UI.HomeCeil.Category"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/card2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image1"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card2"
+        style="@style/UI.HomeCeil.Category"
+
+        app:layout_constraintLeft_toRightOf="@id/card1"
+        app:layout_constraintRight_toLeftOf="@id/card3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image2"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card3"
+        style="@style/UI.HomeCeil.Category"
+
+        app:layout_constraintLeft_toRightOf="@id/card2"
+        app:layout_constraintRight_toLeftOf="@id/card4"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image3"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card4"
+        style="@style/UI.HomeCeil.Category"
+
+        app:layout_constraintLeft_toRightOf="@id/card3"
+        app:layout_constraintRight_toLeftOf="@id/card5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image4"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card5"
+        style="@style/UI.HomeCeil.Category"
+
+        app:layout_constraintLeft_toRightOf="@id/card4"
+        app:layout_constraintRight_toLeftOf="@id/card6"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image5"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+    <bas.leanback.effect.EffectFrameLayout
+        android:id="@+id/card6"
+        style="@style/UI.HomeCeil.Category"
+
+        app:layout_constraintLeft_toRightOf="@id/card5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image6"
+            style="@style/UI.Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/image_place_holder" />
+    </bas.leanback.effect.EffectFrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

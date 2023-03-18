@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply from: '../constants.gradle'
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions{
+        jvmTarget = '1.8'
+        freeCompilerArgs += [
+                '-Xjvm-default=all'
+        ]
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly project.ext.annotation
+}
+
+ext {
+    PUBLISH_ARTIFACT_ID = 'dkplayer-java'
+}

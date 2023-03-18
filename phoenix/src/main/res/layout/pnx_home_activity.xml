@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/glueCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <include
+            android:id="@+id/status_bar"
+            layout="@layout/pnx_home_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll" />
+
+        <bas.leanback.tab.LeanbackTabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:duplicateTabViewState_lbt="false"
+            app:layout_scrollFlags="scroll"
+            app:tabBackground="@null"
+            app:tabIndicator="@null"
+            app:tabMaxWidth="0dp"
+            app:tabMinWidth="0dp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"
+            app:tabRippleColor="@null" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <bas.leanback.tab.LeanbackViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

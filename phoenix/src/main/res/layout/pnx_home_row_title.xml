@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin"
+    style="@style/UI.Text.Title"
+    android:layout_marginTop="20dp"/>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="television_ui_mode">true</bool>
+
+    <color name="color_accent">#FFBB86FC</color>
+
+    <color name="fb_stroke_color">#FBF194</color>
+    <dimen name="fb_stroke_size">2dp</dimen>
+    <dimen name="fb_shadow_size">4dp</dimen>
+    <color name="fb_shadow_color">#FBF194</color>
+
+    <dimen name="pnx_activity_horizontal_margin">55dp</dimen>
+    <dimen name="pnx_activity_horizontal_margin_exclude_fb">49dp</dimen>
+    <dimen name="pnx_card_margin">15dp</dimen>
+    <dimen name="pnx_card_margin_exclude_fb">9dp</dimen>
+    <dimen name="pnx_card_margin_exclude_2fb">3dp</dimen>
+
+    <color name="pnx_window_gradiant_top_color">#151418</color>
+    <color name="pnx_window_gradiant_end_color">#393841</color>
+
+    <color name="pnx_text_color_primary">#f1f1f1</color>
+    <color name="pnx_text_color_accent">#F2E4B6</color>
+    <color name="pnx_text_color_accent_focus">#6A0E08</color>
+    <color name="pnx_text_color_hint">#969698</color>
+    <dimen name="pnx_text_size_title">20sp</dimen>
+    <dimen name="pnx_text_size_headline">16sp</dimen>
+    <dimen name="pnx_text_size_body">14sp</dimen>
+    <dimen name="pnx_text_size_tip">12sp</dimen>
+    <dimen name="pnx_text_vertical_padding">4dp</dimen>
+    <dimen name="pnx_text_horizontal_padding">10dp</dimen>
+    <dimen name="pnx_btn_min_height">32dp</dimen>
+    <color name="pnx_btn_primary_unfocus_color">#26FFFFFF</color><!--#57565D</color>-->
+    <color name="pnx_btn_primary_gradient_left_color">#F0E88F</color>
+    <color name="pnx_btn_primary_gradient_right_color">#D9C272</color>
+
+    <dimen name="pnx_view_margin_small">4dp</dimen>
+    <dimen name="pnx_view_margin">8dp</dimen>
+    <dimen name="pnx_view_margin_medium">16dp</dimen>
+
+    <color name="cmn_primary_btn_bg_normal_color">#26FFFFFF</color>
+    <color name="cmn_primary_btn_bg_focus_color">@color/color_accent</color>
+
+
+    <drawable name="logo_place_holder">@drawable/image_placeholder_bas</drawable>
+    <drawable name="image_place_holder">@drawable/image_placeholder_bas</drawable>
+
+
+    <dimen name="pnx_home_metro_content_height">277dp</dimen>
+    <dimen name="pnx_home_metro_content_height_include_2fb">289dp</dimen>
+    <dimen name="pnx_home_metro_half_row_content_height">131dp</dimen>
+
+    <style name="UI" />
+
+    <style name="UI.Event">
+        <item name="android:focusableInTouchMode">@bool/television_ui_mode</item>
+        <item name="android:focusable">@bool/television_ui_mode</item>
+    </style>
+
+    <!--默认焦点框样式：已在主题中配置，所以不需要自定义对应属性的时候不用设置对应属性值-->
+    <style name="Theme.EffectLayout" parent="UI.Event">
+        <!--获取焦点时调用bringToFront-->
+        <item name="bringToFrontOnFocus_bas">self</item>
+
+        <!--焦点框边框颜色-->
+        <item name="strokeColor_bas">@color/fb_stroke_color</item>
+        <!--焦点框阴影颜色-->
+        <item name="shadowColor_bas">@color/fb_shadow_color</item>
+        <item name="strokeWidth_bas">@dimen/fb_stroke_size</item>
+        <item name="shadowWidth_bas">@dimen/fb_shadow_size</item>
+        <!--缩放系数-->
+        <item name="scaleFactor_bas">1.2</item>
+
+        <item name="scale_bas">false</item>
+    </style>
+
+    <style name="UI.HomeStatusBtn" parent="UI.Event">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <!--        <item name="android:background">@drawable/cmn_primary_button_slt</item>-->
+    </style>
+
+    <style name="UI.Image">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="UI.Text" />
+
+    <style name="UI.Text.Shadow">
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:shadowColor">#6b1b2322</item>
+    </style>
+
+    <style name="UI.Text.Title">
+        <item name="android:textSize">@dimen/pnx_text_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/pnx_text_color_primary</item>
+    </style>
+
+    <style name="UI.Text.Headline">
+        <item name="android:textSize">@dimen/pnx_text_size_headline</item>
+        <item name="android:textColor">@color/pnx_text_color_primary</item>
+    </style>
+
+    <style name="UI.Text.Body">
+        <item name="android:textSize">@dimen/pnx_text_size_body</item>
+        <item name="android:textColor">@color/pnx_text_color_primary</item>
+    </style>
+
+    <style name="UI.Text.Tip">
+        <item name="android:textSize">@dimen/pnx_text_size_tip</item>
+        <item name="android:textColor">@color/pnx_text_color_hint</item>
+    </style>
+
+    <style name="UI.Button" parent="UI.Event">
+        <item name="android:background">@drawable/pnx_primary_btn_bg_slt</item>
+        <item name="android:textColor">@color/pnx_primary_accent_text_color_slt</item>
+        <item name="android:minHeight">@dimen/pnx_btn_min_height</item>
+        <item name="android:textAppearance">@style/UI.Text.Headline</item>
+    </style>
+
+    <style name="UI.Button.WithPadding">
+        <item name="android:paddingTop">@dimen/pnx_text_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/pnx_text_vertical_padding</item>
+        <item name="android:paddingLeft">@dimen/pnx_text_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/pnx_text_horizontal_padding</item>
+    </style>
+
+    <style name="UI.HomeCeil" />
+
+    <style name="UI.HomeTitle" parent="UI.Text.Title"/>
+    <!--专题策划-->
+    <style name="UI.HomeCeil.Weight2CardInConstraint">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">834:353</item>
+    </style>
+
+    <style name="UI.HomeCeil.Weight3CardInConstraint">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">546:321</item>
+
+        <!--        <item name="android:layout_width">546dp</item>-->
+        <!--        <item name="android:layout_height">321dp</item>-->
+    </style>
+
+
+    <style name="UI.HomeCeil.Category" parent="UI.Event">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">375:210</item>
+        <item name="layout_constraintHorizontal_weight">1</item>
+        <item name="android:layout_marginLeft">@dimen/pnx_card_margin_exclude_2fb</item>
+    </style>
+
+    <style name="UI.HomeCeil.Card2Weight4Container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="UI.HomeCeil.Card2Weight4Image" parent="UI.Image">
+        <item name="android:layout_width">206dp</item>
+        <item name="android:layout_height">118dp</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="UI.HomeCeil.Card2Weight4Time">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/pnx_text_color_primary</item>
+        <item name="android:background">@drawable/pnx_cmn_tag_bg_corner2dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="UI.HomeCeil.Card2Weight4Text" parent="UI.Text.Body" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">2</item>
+        <item name="android:paddingTop">@dimen/pnx_text_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/pnx_text_vertical_padding</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:textColor">@color/pnx_text_color_hint_to_accent_slt</item>
+        <item name="android:background">@drawable/pnx_cmn_transparent_to_btn_slt</item>
+    </style>
+
+</resources>

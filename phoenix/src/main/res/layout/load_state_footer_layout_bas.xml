@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        style="@style/LoadStateFooter.Container"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        tools:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loading_view"
+            style="@style/LoadStateFooter.LoadingView" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            style="@style/LoadStateFooter.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_margin_msf"
+            android:text="@string/loading_msf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fail_layout"
+        style="@style/LoadStateFooter.Container"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/fail_text"
+            style="@style/LoadStateFooter.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_margin_msf"
+            android:drawableLeft="@drawable/ic_retry_reverse_circle_arrow_msf"
+            android:paddingLeft="@dimen/view_margin_msf" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/complete_layout"
+        style="@style/LoadStateFooter.Container"
+        android:duplicateParentState="true"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/complete_text"
+            style="@style/LoadStateFooter.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:text="@string/load_more_not_loading_msf" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/no_more_layout"
+        style="@style/LoadStateFooter.Container"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1px"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/ic_divider_msf" />-->
+
+        <TextView
+            android:id="@+id/no_more_text"
+            style="@style/LoadStateFooter.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/no_more_data_msf" />
+
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="1px"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/ic_divider_msf" />-->
+    </LinearLayout>
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape>
+            <solid android:color="@color/cmn_primary_btn_bg_focus_color" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/cmn_primary_btn_bg_focus_color" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="@color/cmn_primary_btn_bg_normal_color" />
+            <corners android:radius="48dp" />
+        </shape>
+    </item>
+</selector>

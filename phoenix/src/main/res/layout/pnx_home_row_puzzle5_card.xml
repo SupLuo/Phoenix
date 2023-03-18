@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--拼图模块：北斗问天-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:background="#000">
+
+    <include
+        android:id="@+id/puzzle_row1"
+        layout="@layout/pnx_home_row_weight2_card" />
+
+    <include
+        android:id="@+id/puzzle_row2"
+        layout="@layout/pnx_home_row_weight3_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pnx_card_margin_exclude_2fb"/>
+
+</LinearLayout>

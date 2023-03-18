@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/pnx_activity_horizontal_margin"
+    android:paddingRight="@dimen/pnx_activity_horizontal_margin"
+    android:layout_marginTop="20dp"
+    tools:background="#000">
+
+    <TextView
+        android:id="@+id/title_view"
+        style="@style/UI.Text.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn1"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="军情观察室" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn2"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鲁豫有约" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn3"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凤凰全球连线" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn4"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凤凰大视野" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn5"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello大湾区" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/latest_title_btn6"
+        style="@style/UI.Button.WithPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="幸福花开" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:flow_horizontalGap="@dimen/pnx_view_margin"
+        app:constraint_referenced_ids="latest_title_btn1,latest_title_btn2,latest_title_btn3,latest_title_btn4,latest_title_btn5,latest_title_btn6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

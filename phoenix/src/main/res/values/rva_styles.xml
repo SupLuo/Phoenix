@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+
+    <item name="tag_powerful_adapter" type="id"/>
+
+    <string name="loading_msf">加載中...</string>
+    <string name="load_more_not_loading_msf">点击加载更多</string>
+    <string name="no_more_data_msf">到底啦</string>
+
+    <dimen name="view_margin_msf">4dp</dimen>
+
+    <dimen name="progress_bar_size_msf">24dp</dimen>
+
+    <style name="LoadStateFooter" />
+
+    <!--    加载更多底部容器样式-->
+    <style name="LoadStateFooter.Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <!--parent 一般是FrameLayout，所以要在该布局中居中：但其实设置了match_parent的宽度，这里也用不上的-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:minHeight">36dp</item>
+    </style>
+
+    <style name="LoadStateFooter.LoadingView" parent="@android:style/Widget.Holo.ProgressBar.Small">
+        <item name="android:layout_width">@dimen/progress_bar_size_msf</item>
+        <item name="android:layout_height">@dimen/progress_bar_size_msf</item>
+    </style>
+
+
+    <!--描述性文本：12sp caption color-->
+    <style name="LoadStateFooter.Text" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/view_margin_msf</item>
+    </style>
+
+</resources>
